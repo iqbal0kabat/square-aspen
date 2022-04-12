@@ -120,7 +120,7 @@
         "r7insight_node": "^1.8.2",
         "serialize-error": "^4.1.0",
         "serverless-webpack": "^5.2.0",
-        "simple-git": "^1.113.0",
+        "simple-git": "^3.5.0",
         "single-config": "^2.0.0",
         "slugify": "^1.4.0",
         "source-map-support": "^0.5.19",

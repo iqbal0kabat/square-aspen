@@ -86,7 +86,7 @@
         "husky": "^4.3.8",
         "jose": "^3.15.5",
         "js-yaml": "3.14.1",
-        "jsonwebtoken": "^8.5.1",
+        "jsonwebtoken": "^9.0.0",
         "lodash": "^4.17.11",
         "mailgun-js": "^0.21.0",
         "micromatch": "^4.0.1",

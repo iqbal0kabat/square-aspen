@@ -106,3 +106,30 @@ To update App's project external api types:
 
 1. add export to external-api-types.ts
 1. run `./npm run update-external-api-types:copy` from `/stackbit-api/`
+
+## Codex CLI
+
+Codex CLI is OpenAI's coding agent that you can run locally from your terminal. It can read, change, and run code on your machine in the selected directory.
+It is open source at https://github.com/openai/codex and built in Rust for speed and efficiency.
+
+ChatGPT Plus, Pro, Business, Edu, and Enterprise plans include Codex. Learn more about what is included: https://developers.openai.com/codex/pricing.
+
+### CLI setup
+
+The Codex CLI is available on macOS, Windows, and Linux. On Windows, run Codex natively in PowerShell with the Windows sandbox, or use WSL2 when you need a Linux-native environment. For setup details, see: https://developers.openai.com/codex/windows.
+
+If you're new to Codex, read the best practices guide: https://developers.openai.com/codex/learn/best-practices.
+
+### Work with the Codex CLI
+
+- Run Codex interactively: https://developers.openai.com/codex/cli/features#running-in-interactive-mode
+- Control model and reasoning: https://developers.openai.com/codex/cli/features#models-reasoning
+- Image inputs: https://developers.openai.com/codex/cli/features#image-inputs
+- Image generation: https://developers.openai.com/codex/cli/features#image-generation
+- Run local code review: https://developers.openai.com/codex/cli/features#running-local-code-review
+- Use subagents: https://developers.openai.com/codex/subagents
+- Web search: https://developers.openai.com/codex/cli/features#web-search
+- Codex Cloud tasks: https://developers.openai.com/codex/cli/features#working-with-codex-cloud
+- Scripting Codex: https://developers.openai.com/codex/noninteractive
+- Model Context Protocol: https://developers.openai.com/codex/mcp
+- Approval modes: https://developers.openai.com/codex/cli/features#approval-modes

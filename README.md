@@ -106,3 +106,35 @@ To update App's project external api types:
 
 1. add export to external-api-types.ts
 1. run `./npm run update-external-api-types:copy` from `/stackbit-api/`
+
+## Codex CLI
+
+[Codex CLI](https://github.com/openai/codex) is OpenAI's local coding agent for inspecting code, making edits, running project commands, and automating repeatable work from a terminal. It is included with ChatGPT Plus, Pro, Business, Edu, and Enterprise plans; see [Codex pricing](https://developers.openai.com/codex/pricing) for current plan details.
+
+### Quick start
+
+Install Codex, open this repository, and start an interactive session:
+
+```sh
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+cd /path/to/stackbit-api
+codex
+```
+
+The first `codex` run prompts you to sign in. Create git checkpoints before and after Codex tasks so changes are easy to review or revert.
+
+Codex CLI supports macOS, Linux, and Windows. On Windows, use native PowerShell with the Windows sandbox, or use WSL2 when you need a Linux-native environment. See the [Windows setup guide](https://developers.openai.com/codex/windows) and [best practices guide](https://developers.openai.com/codex/learn/best-practices) for more details.
+
+### Useful commands and workflows
+
+- `codex` starts the interactive terminal UI for repository exploration, planning, edits, and local command execution.
+- `/model` changes the active model and reasoning effort during an interactive session.
+- `/permissions` reviews or changes what Codex is allowed to do in the current session.
+- `/review` asks Codex to review local changes before you commit or open a pull request.
+- `codex exec "<task>"` runs Codex non-interactively for repeatable scripts and CI-style workflows.
+- `codex --image <path>` starts with visual context from a screenshot, diagram, or design reference.
+- `codex --search` enables live web search when a task depends on current documentation or external behavior.
+- `codex cloud` moves work to a configured Codex cloud environment and lets you apply results locally later.
+- `codex mcp` configures Model Context Protocol servers so Codex can use additional tools and context.
+
+See the [Codex CLI docs](https://developers.openai.com/codex/cli), [CLI features](https://developers.openai.com/codex/cli/features), [subagents](https://developers.openai.com/codex/subagents), and [MCP guide](https://developers.openai.com/codex/mcp) for the full feature set.

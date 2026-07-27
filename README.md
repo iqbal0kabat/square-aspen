@@ -109,27 +109,24 @@ To update App's project external api types:
 
 ## Codex CLI
 
-Codex CLI is OpenAI's coding agent that you can run locally from your terminal. It can read, change, and run code on your machine in the selected directory.
-It is open source at https://github.com/openai/codex and built in Rust for speed and efficiency.
+[Codex CLI](https://github.com/openai/codex) is OpenAI's local coding agent. Run it from your terminal to read, edit, and execute code in the selected project directory. It is open source, built in Rust, and included with ChatGPT Plus, Pro, Business, Edu, and Enterprise plans; see the [Codex pricing page](https://developers.openai.com/codex/pricing) for plan details.
 
-ChatGPT Plus, Pro, Business, Edu, and Enterprise plans include Codex. Learn more about what is included: https://developers.openai.com/codex/pricing.
+### Setup
 
-### CLI setup
+Codex CLI is available on macOS, Windows, and Linux. On Windows, use native PowerShell with the Windows sandbox, or use WSL2 when you need a Linux-native environment. See the [Windows setup guide](https://developers.openai.com/codex/windows) for platform-specific details.
 
-The Codex CLI is available on macOS, Windows, and Linux. On Windows, run Codex natively in PowerShell with the Windows sandbox, or use WSL2 when you need a Linux-native environment. For setup details, see: https://developers.openai.com/codex/windows.
+If you are new to Codex, start with the [best practices guide](https://developers.openai.com/codex/learn/best-practices).
 
-If you're new to Codex, read the best practices guide: https://developers.openai.com/codex/learn/best-practices.
+### Common workflows
 
-### Work with the Codex CLI
-
-- Run Codex interactively: https://developers.openai.com/codex/cli/features#running-in-interactive-mode
-- Control model and reasoning: https://developers.openai.com/codex/cli/features#models-reasoning
-- Image inputs: https://developers.openai.com/codex/cli/features#image-inputs
-- Image generation: https://developers.openai.com/codex/cli/features#image-generation
-- Run local code review: https://developers.openai.com/codex/cli/features#running-local-code-review
-- Use subagents: https://developers.openai.com/codex/subagents
-- Web search: https://developers.openai.com/codex/cli/features#web-search
-- Codex Cloud tasks: https://developers.openai.com/codex/cli/features#working-with-codex-cloud
-- Scripting Codex: https://developers.openai.com/codex/noninteractive
-- Model Context Protocol: https://developers.openai.com/codex/mcp
-- Approval modes: https://developers.openai.com/codex/cli/features#approval-modes
+- [Run Codex interactively](https://developers.openai.com/codex/cli/features#running-in-interactive-mode) with the terminal UI.
+- [Control model and reasoning](https://developers.openai.com/codex/cli/features#models-reasoning) using `/model`.
+- [Attach image inputs](https://developers.openai.com/codex/cli/features#image-inputs), such as screenshots or design specs.
+- [Generate or edit images](https://developers.openai.com/codex/cli/features#image-generation) directly from the CLI.
+- [Run local code review](https://developers.openai.com/codex/cli/features#running-local-code-review) before committing changes.
+- [Use subagents](https://developers.openai.com/codex/subagents) to parallelize complex tasks.
+- [Enable web search](https://developers.openai.com/codex/cli/features#web-search) when a task needs up-to-date information.
+- [Work with Codex Cloud tasks](https://developers.openai.com/codex/cli/features#working-with-codex-cloud) from the terminal.
+- [Script Codex](https://developers.openai.com/codex/noninteractive) with the `exec` command for repeatable workflows.
+- [Connect MCP servers](https://developers.openai.com/codex/mcp) to provide additional tools and context.
+- [Choose approval modes](https://developers.openai.com/codex/cli/features#approval-modes) that match the level of autonomy you want.
